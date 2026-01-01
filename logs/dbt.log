@@ -1,0 +1,145 @@
+[0m21:33:46.214900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023C1FA3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023E52C250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023E52C070>]}
+
+
+============================== 21:33:46.224898 | 75cbefd4-b7e3-40d2-ad0c-d3168834854d ==============================
+[0m21:33:46.224898 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:33:46.227899 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init dbt-energy-pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:33:52.556593 [error] [MainThread]: Encountered an error:
+
+[0m21:33:52.562596 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:33:52.566625 [debug] [MainThread]: Command `dbt init` failed at 21:33:52.566625 after 6.48 seconds
+[0m21:33:52.568595 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023C1FA3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023E51C0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002023E51C070>]}
+[0m21:33:52.570599 [debug] [MainThread]: Flushing usage events
+[0m21:33:53.306431 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:34:00.488410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934AB22320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934BDA5C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934BDA6230>]}
+
+
+============================== 21:34:00.497408 | c303dfcd-8e10-43b1-ba90-d85ca7420a07 ==============================
+[0m21:34:00.497408 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:34:00.501407 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init dbt-energy-pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:34:14.890777 [error] [MainThread]: Encountered an error:
+
+[0m21:34:14.895782 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:34:14.898782 [debug] [MainThread]: Command `dbt init` failed at 21:34:14.898782 after 14.55 seconds
+[0m21:34:14.899785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934AB22320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934BDEC160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002934BDEC130>]}
+[0m21:34:14.901781 [debug] [MainThread]: Flushing usage events
+[0m21:34:15.529647 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:34:23.032094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C254022F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C276561D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C27654FD0>]}
+
+
+============================== 21:34:23.043187 | 392a4322-7769-463b-a3a8-3c6db2e9379e ==============================
+[0m21:34:23.043187 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:34:23.045702 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init energy-pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:36:24.300768 [error] [MainThread]: Encountered an error:
+
+[0m21:36:24.306768 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\task\init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\task\init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:36:24.309770 [debug] [MainThread]: Command `dbt init` failed at 21:36:24.309770 after 121.42 seconds
+[0m21:36:24.311770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C254022F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C2769C460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029C2769C490>]}
+[0m21:36:24.313768 [debug] [MainThread]: Flushing usage events
+[0m21:36:25.089032 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:36:30.486224 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146F86A380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021471B34910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021471B350F0>]}
+
+
+============================== 21:36:30.496221 | 0002c029-6051-45f1-a58d-c24250c461d6 ==============================
+[0m21:36:30.496221 [info ] [MainThread]: Running with dbt=1.11.2
+[0m21:36:30.498230 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init energy-pipeline', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:36:43.967870 [debug] [MainThread]: Starter project path: C:\Users\Admin\anaconda3\envs\dbt_energy_pipeline\lib\site-packages\dbt\include\starter_project
+[0m21:36:44.352139 [info ] [MainThread]: 
+Your new dbt project "dbt_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:36:44.355140 [info ] [MainThread]: Setting up your profile.
+[0m21:36:47.047151 [debug] [MainThread]: Command `dbt init` succeeded at 21:36:47.047151 after 16.69 seconds
+[0m21:36:47.049154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002146F86A380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021471B80370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021471B80400>]}
+[0m21:36:47.051666 [debug] [MainThread]: Flushing usage events
+[0m21:36:47.844994 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:04:45.353825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151EC4A2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021520EE83A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021520EE81C0>]}
+
+
+============================== 22:04:45.374904 | cc334cc0-cba4-43e9-93b3-535fdf83b2df ==============================
+[0m22:04:45.374904 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:04:45.377909 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'invocation_command': 'dbt compile -s stg_energy_readings', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:04:45.379908 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path F:\My Drive\DSAA\final_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:04:45.381908 [debug] [MainThread]: Command `dbt compile` failed at 22:04:45.381908 after 0.16 seconds
+[0m22:04:45.384241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002151EC4A2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021520E2BAC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021520EE8460>]}
+[0m22:04:45.385243 [debug] [MainThread]: Flushing usage events
+[0m22:04:46.024976 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:04:53.299665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532D6262F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532D88B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532E83BB80>]}
+
+
+============================== 22:04:53.307743 | 0bd53940-940a-4cb1-9b3f-833783bed8aa ==============================
+[0m22:04:53.307743 [info ] [MainThread]: Running with dbt=1.11.2
+[0m22:04:53.309743 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt run -s stg_energy_readings', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m22:04:53.311743 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path F:\My Drive\DSAA\final_project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m22:04:53.313817 [debug] [MainThread]: Command `dbt run` failed at 22:04:53.313817 after 0.13 seconds
+[0m22:04:53.315816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532D6262F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532E83BB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002532E83B610>]}
+[0m22:04:53.316816 [debug] [MainThread]: Flushing usage events
+[0m22:04:53.987697 [debug] [MainThread]: An error was encountered while trying to flush usage events

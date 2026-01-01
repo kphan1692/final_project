@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: mart_training_energy
+    columns:
+      - name: id_device
+        data_tests: [not_null]
+      - name: ts
+        data_tests: [not_null]
+      - name: target_ac_power
+        data_tests: [not_null]

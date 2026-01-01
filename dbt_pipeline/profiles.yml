@@ -1,0 +1,7 @@
+#dbt_pipeline:
+energy_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../db/energy.duckdb
