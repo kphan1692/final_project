@@ -1,0 +1,22 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.log
+logs/
+
+# Don't bake secrets into images
+.env
+.env.*
+
+# Large/non-runtime assets
+db/
+data/
+dbt_pipeline/target/
+dbt_pipeline/logs/
+notebook/*.ipynb
+notebook/final/outputs/*.csv
+notebook/final/outputs/model.pkl

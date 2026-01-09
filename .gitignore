@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Env files (keep templates)
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs / build artifacts
+logs/
+*.log
+dist/
+build/
+*.egg-info/
+
+# dbt artifacts
+dbt_pipeline/target/
+dbt_pipeline/logs/
+
+# Notebook training outputs (keep the deployed model artifact)
+notebook/final/outputs/*
+!notebook/final/outputs/model.pkl

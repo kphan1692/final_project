@@ -1,0 +1,37 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      HOST: ${HOST:-0.0.0.0}
+      LISTEN_PORT: ${LISTEN_PORT:-8000}
+      MODEL_PATH: ${MODEL_PATH:-/models/model.pkl}
+      RABBITMQ_HOST: ${RABBITMQ_HOST:-rabbitmq}
+      PREDICTION_QUEUE: ${PREDICTION_QUEUE:-prediction_queue}
+    volumes:
+      - ./notebook/final/outputs:/models:ro
+    ports:
+      - "8000:8000"
+    depends_on:
+      - rabbitmq
+
+  ui:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    environment:
+      API_URL: ${API_URL:-http://api:8000}
+      RABBITMQ_HOST: ${RABBITMQ_HOST:-rabbitmq}
+      PREDICTION_QUEUE: ${PREDICTION_QUEUE:-prediction_queue}
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+      - rabbitmq
